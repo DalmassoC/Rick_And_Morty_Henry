@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import validation from './components/validation.js';
+import validation from '../validation.js';
 
 const Form = (login) => {
     const [userData, setUserData] = useState ({
@@ -34,7 +34,7 @@ const Form = (login) => {
         <br />
 
         <label>Password: </label>
-        <input onChange={handleChange} value={userData.password} type="text" name="password" />
+        <input onChange={handleChange} value={userData.password} type="password" name="password" />
         {errors.p1 ? (<p>{errors.p1}</p>) : (<p>{errors.p2}</p>)}
 
         <br />
