@@ -8,7 +8,7 @@ import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
-const EMAIL = 'candedalmasso@gmail.com';
+const EMAIL = 'candedalmasso@hotmail.com';
 const PASSWORD = 'abcd1234'
 
 
@@ -45,7 +45,7 @@ function App() {
    const onClose = (id) => {
       setCharacters (
          characters.filter(char =>{
-         return char.id != Number(id)
+         return char.id !== Number(id)
          })
       );
    };
